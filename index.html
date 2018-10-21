@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Web Design UX Landing Page</title>
+    <link rel="shortcut icon" type="img/png"  href="fav.png">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="main/style.css">
+    <link rel="stylesheet" href="main/main.scss">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+  
+    <!--Fontawesome icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!--Fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>   
+
+     <!--NAVBAR-->
+     <nav>
+        <div class="menu-icon">
+              <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">
+             graphicsourcepro</div>
+        <div class="menu">
+              <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="btn2"  href="#">Sign up</a></li>
+              </ul>
+        </div>
+  </nav>
+     <!--NAVBAR END-->
+</head>
+<body>
+    <div class="wrapper">
+            <img class="img-me" src="img/webdesignupdate1.png"  alt="illustration">
+<article class="img-info">
+     <h2>Web<br>Design</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor aliquet metus,
+      aliquet euismod velit tempor vitae. Donec vulputate dapibus felis a blandit. Nulla sagittis ultricies dui quis fringilla.</p>
+      <a href="#" class="button"><span>Get started</span></a>
+</article>
+    </div>
+    <script type="text/javascript">
+
+        // Menu-toggle button
+  
+        $(document).ready(function() {
+              $(".menu-icon").on("click", function() {
+                    $("nav ul").toggleClass("showing");
+                   
+              });
+        });
+  
+        // Scrolling Effect
+  
+        $(window).on("scroll", function() {
+              if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+              }
+  
+              else {
+                    $('nav').removeClass('black');
+              }
+        })
+  
+  
+        </script>
+</body>
+</html>
